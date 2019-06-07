@@ -43,7 +43,11 @@ app.use(function(req, res, next){
     next();
 })
 
-mongoose.connect('mongodb+srv://divinevinh:vanthao1@cluster0-vde97.mongodb.net/test?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://divinevinh:vanthao1@cluster0-vde97.mongodb.net/test?retryWrites=true&w=majority', err =>{
+    if (err) console.log(err)
+    else
+    console.log("CONNECT SUCCESS!")
+});
 
 
 
