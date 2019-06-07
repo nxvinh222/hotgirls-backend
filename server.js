@@ -7,7 +7,7 @@ const session = require('express-session');
 
 app.use((req, res, next) => {
     res.setHeader("X-Frame-Options", "ALLOWALL");
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.setHeader("Access-Control-Allow-Origin", "https://bishoujo.herokuapp.com/");
     res.setHeader(
       "Access-Control-Allow-Methods",
       "POST, GET, PUT, DELETE, OPTIONS"
@@ -43,7 +43,7 @@ app.use(function(req, res, next){
     next();
 })
 
-mongoose.connect('mongodb+srv://divinevinh:vanthao1@cluster0-vde97.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://divinevinh:vanthao1@cluster0-vde97.mongodb.net/test?retryWrites=true&w=majority');
 
 
 
