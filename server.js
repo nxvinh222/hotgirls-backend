@@ -7,7 +7,7 @@ const session = require('express-session');
 
 app.use((req, res, next) => {
     res.setHeader("X-Frame-Options", "ALLOWALL");
-    res.setHeader("Access-Control-Allow-Origin", "https://bishoujo.herokuapp.com/");
+    res.setHeader("Access-Control-Allow-Origin", "https://bishoujo.herokuapp.com");
     res.setHeader(
       "Access-Control-Allow-Methods",
       "POST, GET, PUT, DELETE, OPTIONS"
