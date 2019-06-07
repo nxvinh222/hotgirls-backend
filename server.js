@@ -62,7 +62,7 @@ app.get('/login', function(req, res){
     res.sendFile(path.resolve(__dirname, '../frontend/login.html'));
 })
 
-app.listen(process.event.PORT || 8008, function(err){   
+app.listen(process.env.PORT || 8008, function(err){   
     if (err) console.log(err)
     else console.log("Link start!");
 })
