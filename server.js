@@ -53,14 +53,14 @@ app.use('/api/users', userApiRouter);
 const postApiRouter = require('./routers/postApi');
 app.use('/api/post', postApiRouter); 
 
-app.get('/', function(req, res){
-    res.sendFile(path.resolve(__dirname, '../frontend/home.html'));
-})
+// app.get('/', function(req, res){
+//     res.sendFile(path.resolve(__dirname, '../frontend/home.html'));
+// })
 
 
-app.get('/login', function(req, res){
-    res.sendFile(path.resolve(__dirname, '../frontend/login.html'));
-})
+// app.get('/login', function(req, res){
+//     res.sendFile(path.resolve(__dirname, '../frontend/login.html'));
+// })
 
 app.listen(process.env.PORT || 8008, function(err){   
     if (err) console.log(err)
