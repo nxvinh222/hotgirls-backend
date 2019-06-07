@@ -43,7 +43,7 @@ app.use(function(req, res, next){
     next();
 })
 
-mongoose.connect('mongodb://localhost/tk-hotgirls');
+mongoose.connect('mongodb+srv://divinevinh:<vanthao1>@cluster0-vde97.mongodb.net/test?retryWrites=true&w=majority');
 
 
 
